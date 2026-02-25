@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مرحبا بك في مدارس الأحد</title>
+  <link rel="stylesheet" href="f2.css">
+</head>
+<body>
+
+  <div class="welcome" id="welcomeScreen">
+    <div class="welcome-bg"></div>
+    <div class="welcome-text">
+      <h1>أهلاً بيك في خدمة مدارس الأحد</h1>
+      <p>كنيسة الشهيد العظيم ابي سيفين والامير تادرس الشطبي</p>
+      <button class="enter-btn" onclick="enterSite()">دخول للموقع</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Developed by Engineer: Mario Ashraf
+  </footer>
+
+  <script>
+    function enterSite() {
+      // عند الضغط على دخول، ينقلك للصفحة الثانية
+      window.location.href = "f1.html";
+    }
+  </script>
+
+</body>
+</html>

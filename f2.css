@@ -1,0 +1,204 @@
+/* ========= الخطوط والأساسيات ========= */
+body {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  margin: 0;
+  background: linear-gradient(-45deg, #c7d2fe, #e0f2fe, #fae8ff, #fef3c7);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+}
+
+/* ========= تحريك الخلفية ========= */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ========= شاشة الترحيب ========= */
+.welcome {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.welcome-bg {
+  position: absolute;
+  inset: 0;
+  background: url('WhatsApp Image 2026-02-25 at 5.52.15 PM.jpeg?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+  background-size: cover;
+  opacity: 0.35;
+  animation: bgMove 8s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes bgMove {
+  0% { transform: scale(1) translateY(0); opacity: 0.3; }
+  50% { transform: scale(1.05) translateY(-10px); opacity: 0.4; }
+  100% { transform: scale(1) translateY(0); opacity: 0.35; }
+}
+
+.welcome-text {
+  position: relative;
+  z-index: 2;
+  background: rgba(210, 192, 192, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 30px 50px;
+  border-radius: 20px;
+  text-align: center;
+  animation: textFade 1.2s ease forwards;
+}
+
+@keyframes textFade {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.welcome-text h1, .welcome-text p { color: rgb(20, 14, 14); margin: 10px 0; }
+
+.enter-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #2563eb;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.enter-btn:hover { transform: scale(1.05); background: #f1f5f9; }
+
+/* ========= الهيدر ========= */
+.header {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  background: linear-gradient(135deg,#60a5fa,#a78bfa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+/* ========= الحاوية الرئيسية ========= */
+.container {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 15px;
+}
+
+/* ========= أزرار الفصول (Accordion) ========= */
+.classes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.class-item {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.class-btn {
+  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  color: white;
+  border: none;
+  padding: 16px;
+  width: 100%;
+  text-align: right;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.class-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,0.2); }
+
+.class-content {
+  display: none; /* مخفي من البداية */
+  background: rgba(255,255,255,0.95);
+  padding: 12px;
+  border-top: 1px solid #e2e8f0;
+  border-radius: 0 0 16px 16px;
+}
+
+/* ========= الجدول ========= */
+.class-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: linear-gradient(135deg,#2563eb,#7c3aed);
+  color: white;
+  border-radius: 6px;
+}
+
+/* ========= المسؤولين ========= */
+.responsibles {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-top: 10px;
+}
+
+.responsibles div { display:flex; align-items:center; gap:6px; }
+.responsibles span { color: green; font-weight: bold; }
+
+/* ========= Footer ========= */
+.footer {
+  text-align: center;
+  padding: 12px 0;
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  font-weight: bold;
+  color: #1e293b;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.1);
+}
+
+/* ========= الرسوميات والتحريك ========= */
+@keyframes fadeIn { from{opacity:0; transform:translateY(15px);} to{opacity:1; transform:translateY(0);} }
+
+.card { animation: fadeIn 0.4s ease; }
+
+/* ========= Responsive للموبايل ========= */
+@media (max-width: 600px) {
+  .class-btn { font-size: 16px; padding: 14px; }
+  .class-content table th, .class-content table td { font-size: 12px; padding: 8px; }
+  .header { flex-direction: column; gap: 8px; }
+  .logo { width: 50px; height: 50px; }
+}
