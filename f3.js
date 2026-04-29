@@ -12,24 +12,26 @@ const illustrations = ["اسكتش","صور Ai","اشغال يدوية","صور 
 
 // ================== الدروس (مرة واحدة فقط) ==================
 const lessons = [
-  { date: "2026-04-3", lesson: "بانوراما اسبوع الالام", source: "-" },
-  { date: "2026-04-10", lesson: "اجازة الجمعة العظيمة", source: "-" },
-  { date: "2026-04-17", lesson: "افراح القيامة", source: "https://st-takla.org/books/pope-sheounda-iii/resurrection/happiness.html" },
-  { date: "2026-04-24", lesson: "سر الميرون", source: "https://st-takla.org/Coptic-Faith-Creed-Dogma/Coptic-Rite-n-Ritual-Taks-Al-Kanisa/05-The-Seven-Holy-Sacraments__Bishop-Benjamin/Coptic-7-Sacraments_010-Serr-El-Mairoun-Mayroon-Oil.html" }
+  { date: "2026-05-1", lesson: "  استشهاد مارجرجس", source: "https://st-takla.org/Saints/Saint-George_.html" },
+  { date: "2026-05-8", lesson: "تاريخ دخول المسيحية مصر(استشهاد مارمرقس) ", source: "https://st-takla.org/books/helmy-elkommos/biblical-criticism/new-testament/479.html" },
+  { date: "2026-05-15", lesson: "مجمع نيقية (نياحة البابا اثناسيوس الرسولي) ", source: "https://st-takla.org/Coptic-History/CopticHistory_02-History-of-the-Coptic-Church-Councils-n-Christian-Heresies/Encyclopedia-Coptica-History__005-Magma3-Nekia-325.html" },
+  { date: "2026-05-22", lesson: " عيد الصعود", source: "https://st-takla.org/Coptic-Faith-Creed-Dogma/Coptic-Rite-n-Ritual-Taks-Al-Kanisa/07-Jesus-Mastery-Feast__Anba-Benyameen/Rites-of-Coptic-Small-n-Big-Mastery-Feasts_045-Eid-Ascension-Feast.html" },
+  { date: "2026-05-29", lesson: "  عيد حلول الروح القدس ", source: "https://st-takla.org/Coptic-Faith-Creed-Dogma/Coptic-Rite-n-Ritual-Taks-Al-Kanisa/07-Jesus-Mastery-Feast__Anba-Benyameen/Rites-of-Coptic-Small-n-Big-Mastery-Feasts_046-Eid-Penticost.html" },
+
 ];
 
 // ================== الخدام لكل فصل ==================
 const data = {
-  kg1: [" عامة"," -","ام كاراس ياسر","رانيا تواب"],
-  kg2: ["عامة","-","رانيا يوسف "," ماريان مجدي"],
-  p1: ["عامة ","-","كارولين بنيامين","مورا القس امونيوس"],
-  p2: [" عامة","-","نعمات ظريف","رودي صفوت"],
-  p3b: ["عامة","-","عادل جاد","باسم خلف"],
-  p3g: ["عامة ","-","ماريان تواب "," ايريني مجدي"],
-  p4b: ["عامة","-","كيرلس ماهر","يوسف جاد"],
-  p4g: ["عامة"," - ","مورين بطرس","فيبي عادل"],
-  p5b: ["عامة","-","فادي سامي","توماس سمير"],
-  p5g: ["عامة"," - ","ام شنودة","ام افرايم"]
+  kg1: ["أم جورج","ام كاراس ياسر","أميرة فهيم","مريم عاطف"," ايريني عيد"],
+  kg2: ["ناردين بنيامين","رانيا يوسف","نانسي عيسي","ميرنا اشرف  ","ميرنا ناجح"],
+  p1: ["كارولين بنيامين ","نورا مجدي","مريم هلال","دميانة مجدي","مورا القس امونيوس"],
+  p2: ["نورا هاني","نعمات ظريف","حنان عاطف","رودي صفوت","نورا هاني"],
+  p3b: ["عادل جاد","باسم خلف","عماد يوسف "," عادل جاد","باسم خلف"],
+  p3g: [" مادونا رضا","بسمة عاطف","ماريان تواب","مريم فايز","ايريني مجدي"],
+  p4b: ["كيرلس ماهر","يوسف جاد","ابراهيم اسحق"," مينا منتصر","كيرلس ماهر"],
+  p4g: ["مورين بطرس","انجي سمير ","ام مكاريوس ","فيبي عادل","امل ظريف"],
+  p5b: ["ماريو أشرف","توماس سمير","فادي سامي","كرياكوس سعد","توماس سمير"],
+  p5g: ["ام شنودة","هيلانة","مهرائيل خلف","مادونا ناجح","نورهان فايز"]
 };
 
 // ================== خلط مصفوفة ==================
